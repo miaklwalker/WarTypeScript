@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  
+</head>
+<body>
+<div class="grid-container">
+  <div class="player-area">
+    <div class="playerBadge" id="playerBadge">Player 1</div>
+    <div class="playersCard" id="playersCard">🂱</div>
+    <div class="cardName" id="cardName">Ace Of Hearts</div>
+  </div>
+  <div class="computer-area" id="computer-area">
+    <div class="computerBadge" id="computerBadge">Player 2</div>
+    <div class="ComputerCard"id="ComputerCard">🂱</div>
+    <div class="compcardname"id=compcardname>Ace Of Hearts</div>
+  </div>
+  <div class="game-area">
+    <div class="gameName">WAR! A JavaScript / HTML / CSS GRID / Card GAME</div>
+    <div class="instructions"id="instructions">Click the play Button to begin WAR</div>
+    <div class="outcome" id="outcome">NO CARDS HAVE BEEN DRAWN YET!</div>
+    <div class="field">
+      <div class="cardsRemaining">Cards Remaining</div>
+      <div class="pcardsR" id="pcardsR">26</div>
+      <div class="War" id="War"></div>
+      <div class="CompR" id="CompR">26</div>
+      <button class="Playbutton" onclick="playRound()">DRAW A CARD</button>
+    </div>
+  </div>
+  <div class="footer">A GAME BY MICHAEL RICHARD WALKER</div>
+</div>
+  <script src="typescriptwar.js"></script>
+  <script src="Game.js"></script>
+</body>
+</html>

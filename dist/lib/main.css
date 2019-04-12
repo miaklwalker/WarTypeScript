@@ -1,0 +1,22 @@
+body {
+  background-color: darkgreen;
+  text-align: center;
+  font-size: 50%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* grid-template-areas: "one . . . . . . . . . . ."". . . . . . . . . . . ."". . . . . . . . . . . ."". . . . . . . . . . . ."; */
+}
+.container :nth-child(n){
+  font-size:120px;
+}
+#Abutton{
+  margin-top:5%;
+  font-size: 36px;
+  border:black;
+  border-style: solid;
+  border-width: 4px;
+  background:"white";
+}

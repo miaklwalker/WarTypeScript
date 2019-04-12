@@ -1,0 +1,24 @@
+class Car {
+    interiorColors:color[];
+    exteriorColors:color[];
+    constructor(){
+        this.interiorColors = [];
+        this.exteriorColors = [];
+    }
+    paintTheCar(){
+    paintCar(this.interiorColors,this.exteriorColors,"yellow");
+    }
+}
+class colors{
+    constructor(colorName:string){
+     this.color = colorName
+    }
+previewColor(){
+fooBAR ETC.
+}
+}
+
+function paintCar(SpotToAddColor1,SpotToAddColor2,color:string){
+SpotToAddColor1.push(color);
+SpotToAddColor2.push(color);
+}

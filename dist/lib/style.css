@@ -1,0 +1,173 @@
+body{
+    background-color: darkgreen;
+    text-align: center;
+    font-size: 50%;
+}
+@media screen and (min-width: 500px) {
+  body {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 150%;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr 1fr 1fr 1.5fr 0.5fr;
+  grid-template-rows: 0.3fr 2.6fr 0.1fr;
+  grid-template-areas: ". . . . . ."
+  ". player-area game-area game-area computer-area ."
+  ". footer footer footer footer .";
+}
+
+.player-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2.1fr 0.5fr 1fr;
+  grid-template-areas: "playerBadge"
+  "playersCard"
+  "cardName"".";
+  grid-area: player-area;
+}
+
+.playerBadge {
+  padding:15%;
+  margin:auto;
+  border:5px;
+  border-style: dashed;
+  border-color:black;
+  grid-area: playerBadge;
+}
+
+.playersCard {
+    font-size: 12em;
+  grid-area: playersCard;
+}
+
+.cardName {
+  font-size:36px;
+  grid-area: cardName;
+}
+
+.computer-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2.1fr 0.5fr 1fr;
+  grid-template-areas: "computerBadge"
+                        "ComputerCard"
+                        "compcardname"
+  ".";
+  grid-area: computer-area;
+}
+
+.computerBadge {
+    padding:15%;
+    margin:auto;
+    border:5px;
+    border-style: dashed;
+    border-color:black;
+  grid-area: computerBadge;
+}
+
+.ComputerCard {
+    font-size:12em;
+  grid-area: ComputerCard;
+}
+
+.compcardname {
+   font-size:36px;
+  grid-area: compcardname;
+}
+
+.game-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 0.3fr 0.8fr 2.5fr;
+  grid-template-areas: "gameName"
+                    "instructions"
+                       "outcome"
+                        "field";
+  grid-area: game-area;
+}
+
+.gameName {
+  border:3px;
+  border-color:black;
+  border-style:black;
+  grid-area: gameName;
+}
+
+.instructions {
+  grid-area: instructions;
+}
+
+.outcome {
+  grid-area: outcome;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1.1fr 0.7fr 1.7fr;
+  grid-template-areas: "cardsRemaining cardsRemaining cardsRemaining"
+                        " pcardsR War CompR "
+                         ". Playbutton ."
+                              ". . .";
+  grid-area: field;
+}
+
+.cardsRemaining {
+  grid-area: cardsRemaining;
+}
+.War {
+  grid-area: War;
+  font-size: 3em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+.pcardsR {
+  grid-area: pcardsR;
+}
+
+.CompR {
+  grid-area: CompR;
+}
+
+.Playbutton {
+  grid-area: Playbutton;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff,
+      0px 0px 10px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
